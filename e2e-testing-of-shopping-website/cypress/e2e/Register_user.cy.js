@@ -34,6 +34,8 @@ describe('Register User', () => {
     cy.get("a[href='/delete_account']").click();
     cy.get("b").should('have.text',`Account Deleted!`);
     cy.get(".btn-primary").click();
+
+    cy.pause();
     
     cy.visit('url');
   })
