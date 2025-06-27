@@ -35,5 +35,6 @@ describe('Register User', () => {
     cy.get("b").should('have.text',`Account Deleted!`);
     cy.get(".btn-primary").click();
     
+    cy.visit('url');
   })
 })
