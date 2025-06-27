@@ -1,0 +1,18 @@
+{
+  "name": "e2e-testing-of-shopping-website",
+  "version": "1.0.0",
+  "description": "web testing",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "browser:chrome": "npx cypress run --browser chrome --headed --spec cypress/e2e/Register_user.cy.js --reporter mocha-allure-reporter",
+    "report:allure": "allure generate allure-results --clean -o allure-report && allure open allure-report"
+  },
+  "author": "saharsh",
+  "license": "ISC",
+  "devDependencies": {
+    "allure-commandline": "^2.34.1",
+    "cypress": "^14.5.0",
+    "mocha-allure-reporter": "^1.4.0"
+  }
+}
