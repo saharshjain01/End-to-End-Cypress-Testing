@@ -37,5 +37,6 @@ describe('Register User', () => {
 
     cy.pause();
     
+    cy.visit('url');
   })
 })
